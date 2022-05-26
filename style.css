@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: moccasin;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* mobile device*/
+
+@media only screen and (max-width:30em) {
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #info ul li {
+        display: inline-block;
+        margin-left: 1em;
+        margin-top: 2em;
+        list-style: none;
+        font-size: 2em;
+    }
+    header p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-left: 2em;
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 2em;
+        border-radius: 1em;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.5em;
+        margin: 2em;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    #apple {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 80%;
+        padding-top: 1em;
+    }
+    #banana {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 1em;
+        width: 80%;
+        padding-top: 1em;
+    }
+    #lemon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 1em;
+        width: 80%;
+        padding-top: 1em;
+    }
+    .read {
+        background-color: black;
+        color: white;
+        width: 5em;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1em;
+    }
+    footer figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+        margin-top: 2em;
+    }
+}
+
+
+/* desktop*/
+
+@media only screen and (min-width:48em) {
+    header {
+        width: 100%;
+    }
+    header img {
+        float: left;
+        margin: 3em;
+    }
+    #info ul li {
+        display: inline-block;
+        margin-left: 5em;
+        margin-top: 1em;
+        font-size: 2.5em;
+    }
+    header p {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        font-size: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        width: 5em;
+        height: 2em;
+        border-radius: 1em;
+    }
+    header p:hover {
+        background-color: white;
+        color: black;
+        border: 0.12em solid black;
+    }
+    .read:hover {
+        background-color: white;
+        color: black;
+        border: 0.125em solid black;
+    }
+    #info ul li:hover {
+        color: white;
+    }
+    article h1 {
+        margin-top: 1em;
+        margin-left: 5em;
+        font-size: 7em;
+    }
+    article p {
+        margin-top: 2em;
+        margin-left: 5em;
+        font-size: 2em;
+    }
+    #apple {
+        background-color: white;
+        border-radius: 1em;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #banana {
+        background-color: white;
+        border-radius: 1em;
+        width: 20%;
+        height: 40em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #lemon {
+        background-color: white;
+        border-radius: 1em;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    aside {
+        margin-top: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    aside p {
+        font-size: 2em;
+    }
+    .read {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        width: 5em;
+        height: 2em;
+        border-radius: 1em;
+    }
+    footer ul li {
+        display: inline-block;
+        margin-top: 10em;
+        margin-bottom: 5em;
+        margin-left: 2em;
+    }
+}
